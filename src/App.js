@@ -80,8 +80,6 @@ class App extends React.Component {
 
       const response = await api_call.json();
 
-      console.log(response);
-
       this.setState({
         city: `${response.name}, ${response.sys.country}`,
         celsius: this.calCelsius(response.main.temp),
